@@ -64,7 +64,23 @@ public class RVFoodAdapter extends RecyclerView.Adapter<RVFoodAdapter.FoodViewHo
     public void onBindViewHolder(FoodViewHolder holder, int i) {
         holder.productname.setText(fooditem.get(i).foodname);
         holder.ratemoney.setText(String.valueOf(fooditem.get(i).Price));
-        holder.productImage.setImageResource(R.drawable.bebe);
+        switch (i)
+        {
+            case 0: holder.productImage.setImageResource(R.drawable.pizza1);
+                    break;
+            case 1: holder.productImage.setImageResource(R.drawable.pizza2);
+                break;
+            case 2: holder.productImage.setImageResource(R.drawable.pizza3);
+                break;
+            case 3: holder.productImage.setImageResource(R.drawable.pizza4);
+                break;
+            case 4: holder.productImage.setImageResource(R.drawable.pizza5);
+                break;
+            case 5: holder.productImage.setImageResource(R.drawable.pizza6);
+                break;
+
+        }
+
 
     }
 
