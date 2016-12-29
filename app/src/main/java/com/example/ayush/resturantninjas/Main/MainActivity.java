@@ -1,4 +1,4 @@
-package com.example.ayush.resturantninjas;
+package com.example.ayush.resturantninjas.Main;
 
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
@@ -15,6 +15,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.ayush.resturantninjas.R;
+import com.example.ayush.resturantninjas.RestrauntActivity.BurgerKing;
+import com.example.ayush.resturantninjas.RestrauntActivity.Dominos;
+import com.example.ayush.resturantninjas.RestrauntActivity.KhanaKhazana;
+import com.example.ayush.resturantninjas.RestrauntActivity.RVFoodAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements RVAdapter.ClickLi
         Intent intent;
         switch (position)
         {
-            case 0:intent = new Intent(getApplicationContext(), ClickActivity.class);
+            case 0:intent = new Intent(getApplicationContext(), Dominos.class);
                     intent.putExtra("Position",position);
                     startActivity(intent);
                     break;
