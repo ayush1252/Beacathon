@@ -35,7 +35,7 @@ public class KhanaKhazana extends AppCompatActivity  implements RVFoodAdapter.Cl
         setSupportActionBar(toolbar);
 
         RecyclerView rv = (RecyclerView) findViewById(R.id.rv);
-        GridLayoutManager llm = new GridLayoutManager(this, 2);
+        GridLayoutManager llm = new GridLayoutManager(this, 1);
         rv.setLayoutManager(llm);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
